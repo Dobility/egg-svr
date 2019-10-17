@@ -1,6 +1,6 @@
 # egg.js server framework
 
-egg.js + typescript + egg-shell-decorators + egg-jwt 构成的无视图层的纯服务端框架。
+egg.js + typescript + egg-shell-decorators + egg-jwt + mongodb/mongoose 构成的无视图层的纯服务端框架。
 
 本框架使用更适合服务端开发的 typescript，同时也遇到和解决了一些问题。
 
@@ -9,9 +9,9 @@ egg.js + typescript + egg-shell-decorators + egg-jwt 构成的无视图层的纯
 ## Branches
 
 ```
-* master    # 基本框架
+  master    # 基本框架
   mysql     # master + mysql
-  mongo     # master + mongo
+* mongo     # master + mongo
 ```
 
 
@@ -33,6 +33,10 @@ token 身份验证是比较流行的做法，使用的是 [egg-jwt](https://gith
 ### 参数验证
 
 有时候，我们需要对请求的参数进行有效性验证，例如用户信息注册。可以使用 [egg-validate](https://github.com/eggjs/egg-validate) 工具，配置过程可直接参考 <https://github.com/eggjs/egg-validate>。
+
+### mongodb
+
+这个分支中，使用了数据库 mongodb，如果项目要跑起来的话，需要参考 config/config.{env}.ts 去配置数据库。这里使用了 [egg-mongoose](https://github.com/eggjs/egg-mongoose)，配置和使用参考 <https://github.com/eggjs/egg-mongoose>。
 
 
 

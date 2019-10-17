@@ -8,7 +8,7 @@ export default class UserController extends Controller {
     return this.ctx.jwtData.data;
   }
 
-  @Post('/userList')
+  @Get('/userList')
   public async userList() {
     return await this.ctx.service.user.getAllUser();
   }
