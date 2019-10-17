@@ -15,6 +15,7 @@ import 'egg-static';
 import 'egg-jsonp';
 import 'egg-view';
 import 'egg-jwt';
+import 'egg-knex';
 import 'egg-validate';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
@@ -32,6 +33,7 @@ declare module 'egg' {
     jsonp?: EggPluginItem;
     view?: EggPluginItem;
     jwt?: EggPluginItem;
+    knex?: EggPluginItem;
     validate?: EggPluginItem;
   }
 }

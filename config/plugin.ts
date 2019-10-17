@@ -6,6 +6,10 @@ const plugin: EggPlugin = {
     enable: true,
     package: 'egg-jwt',
   },
+  knex: {
+    enable: true,
+    package: 'egg-knex',
+  },
   validate: {
     enable: true,
     package: 'egg-validate',
