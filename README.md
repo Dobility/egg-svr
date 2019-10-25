@@ -12,6 +12,7 @@ egg.js + typescript + egg-shell-decorators + egg-jwt 构成的无视图层的纯
 * master    # 基本框架
   mysql     # master + mysql
   mongo     # master + mongo
+  swagger   # master + swagger
 ```
 
 
