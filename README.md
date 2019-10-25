@@ -12,6 +12,7 @@ egg.js + typescript + egg-shell-decorators + egg-jwt + mongodb/mongoose 构成�
   master    # 基本框架
   mysql     # master + mysql
 * mongo     # master + mongo
+  swagger   # master + swagger
 ```
 
 
