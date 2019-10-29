@@ -16,6 +16,7 @@ import 'egg-jsonp';
 import 'egg-view';
 import 'egg-jwt';
 import 'egg-validate';
+import 'egg-swagger-view';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
   interface EggPlugin {
@@ -33,5 +34,6 @@ declare module 'egg' {
     view?: EggPluginItem;
     jwt?: EggPluginItem;
     validate?: EggPluginItem;
+    swaggerUi?: EggPluginItem;
   }
 }

@@ -1,5 +1,5 @@
 import { Controller } from 'egg';
-import { Get, IgnoreJwt, Post } from 'egg-shell-decorators';
+import { Get, IgnoreJwt, Parameters, Post } from 'egg-shell-decorators';
 
 export default class UserController extends Controller {
 
@@ -15,6 +15,7 @@ export default class UserController extends Controller {
 
   @IgnoreJwt
   @Post('/register')
+  @Parameters([{ name: 'body', in: 'body', type: 'object', schema: { $ref: 'register' } }])
   public async register() {
     const {
       name = '',

@@ -10,6 +10,10 @@ const plugin: EggPlugin = {
     enable: true,
     package: 'egg-validate',
   },
+  swaggerUi: {
+    enable: true,
+    package: 'egg-swagger-view',
+  },
 };
 
 export default plugin;

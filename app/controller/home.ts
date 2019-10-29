@@ -1,15 +1,18 @@
 import { Controller } from 'egg';
-import { Get, IgnoreJwtAll } from 'egg-shell-decorators';
+import { Description, Get, IgnoreJwtAll, Parameters, Post } from 'egg-shell-decorators';
 
 @IgnoreJwtAll
 export default class HomeController extends Controller {
 
   @Get('/')
+  @Description('首页')
   public async index() {
     return 'hello';
   }
 
-  @Get('/login')
+  @Post('/login')
+  @Description('登录')
+  @Parameters([{ name: 'body', type: 'object', in: 'body', schema: { $ref: 'login' } }])
   public async login() {
     const {
       name = '',
