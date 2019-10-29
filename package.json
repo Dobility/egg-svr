@@ -27,7 +27,7 @@
     "egg-jwt": "^3.1.6",
     "egg-scripts": "^2.6.0",
     "egg-shell-decorators": "^1.0.7",
-    "egg-swagger-view": "^0.1.0",
+    "egg-swagger-view": "^0.1.1",
     "egg-validate": "^2.0.2",
     "http-status": "^1.4.0",
     "jsonwebtoken": "^8.5.1"
