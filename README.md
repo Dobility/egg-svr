@@ -1,6 +1,6 @@
 # egg.js server framework
 
-egg.js + typescript + egg-shell-decorators + egg-jwt 构成的无视图层的纯服务端框架。
+egg.js + typescript + egg-shell-decorators + egg-jwt + swagger-ui 构成的无视图层的纯服务端框架。
 
 本框架使用更适合服务端开发的 typescript，同时也遇到和解决了一些问题。
 
@@ -9,10 +9,10 @@ egg.js + typescript + egg-shell-decorators + egg-jwt 构成的无视图层的纯
 ## Branches
 
 ```
-* master    # 基本框架
+  master    # 基本框架
   mysql     # master + mysql
   mongo     # master + mongo
-  swagger   # master + swagger
+* swagger   # master + swagger
 ```
 
 
