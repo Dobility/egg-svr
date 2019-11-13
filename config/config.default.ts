@@ -14,11 +14,11 @@ export default (appInfo: EggAppInfo) => {
   config.onerror = {
     all(err, ctx) {
       ctx.type = 'json';
-      ctx.body = JSON.stringify({
+      ctx.body = {
         status: ctx.status,
         success: false,
         message: err.message || ctx.statusText || '',
-      });
+      };
     },
   };
 
